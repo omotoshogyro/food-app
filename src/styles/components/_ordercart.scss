@@ -1,0 +1,132 @@
+.ordercart {
+  width: 40.9rem;
+  padding: 2.4rem;
+  background-color: $color-dark-background;
+
+  &__header {
+    height: 13.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    &--text {
+      color: $color-white;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 140%;
+      font-family: "Barlow-semi-bold";
+    }
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    &--typelist {
+      ul {
+        margin: 2.4rem 0;
+        li {
+          width: max-content;
+          height: 3.4rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.4rem;
+          font-weight: 600;
+
+          color: $color-pink-primary;
+          //   font-family: "Barlow-regular";
+          padding: 0.7rem 1.2rem;
+          border-radius: 0.8rem;
+          border: 1px solid $color-light-background;
+          line-height: 0.96rem;
+          letter-spacing: 0.06rem;
+
+          &:first-child {
+            background-color: $color-pink-primary;
+            border: none;
+            color: $color-white;
+          }
+
+          &:not(:last-child) {
+            margin-right: 0.8rem;
+          }
+
+          &:hover {
+            color: $color-white;
+            background-color: $color-pink-primary;
+          }
+        }
+      }
+    }
+    &--titleheaders {
+      ul {
+        li {
+          font-size: 1.6rem;
+          font-weight: 600;
+          font-family: "Barlow-regular";
+          color: $color-white;
+          line-height: 2.24rem;
+          letter-spacing: 0.06rem;
+
+          &:first-child {
+            margin-right: auto;
+          }
+          &:nth-child(2) {
+            margin-right: 4.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__itemscontainer {
+    border-top: 1px solid $color-border-color;
+    border-bottom: 1px solid $color-border-color;
+    height: 45.5rem;
+    overflow-y: scroll;
+  }
+
+  &__discounttotalandpaybtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+
+    &--discounttotal {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 6.2rem;
+      margin-bottom: 4.2rem;
+
+      .block {
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+          font-size: 1.4rem;
+          font-family: "Barlow-regular";
+          font-weight: 400;
+          color: $color-grey-dark;
+        }
+        &__total {
+          font-size: 1.6rem;
+          font-family: "Barlow-regular";
+          font-weight: 500;
+          color: $color-white;
+        }
+      }
+    }
+    &--btn {
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.96rem;
+      color: $color-grey-lighter;
+      border: none;
+      padding: 1.4rem 0;
+      background: $color-pink-primary;
+      box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.3);
+      border-radius: 0.8rem;
+    }
+  }
+}

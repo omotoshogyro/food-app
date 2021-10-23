@@ -1,0 +1,30 @@
+.orderedfood {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  &__image {
+    justify-self: center;
+    align-self: center;
+    margin-right: 1.6rem;
+  }
+
+  &__info {
+    font-family: "Barlow-regular";
+
+    &--title {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 1.82rem;
+      color: $color-grey-light;
+      margin-bottom: 0.4rem;
+    }
+    &--unitordered {
+      font-size: 1.2rem;
+      color: $color-grey-dark;
+      line-height: 1.68rem;
+    }
+  }
+}

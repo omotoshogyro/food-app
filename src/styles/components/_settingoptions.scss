@@ -1,0 +1,56 @@
+.settingoptions {
+  display: flex;
+  padding: 2.4rem;
+  height: 87px;
+  position: relative;
+
+  &__icon {
+    margin-right: 0.8rem;
+  }
+
+  &__texts {
+    &--header {
+      font-weight: 500;
+      font-size: 1.4rem;
+      height: 1.8rem;
+      font-family: "Barlow-regular";
+      color: $color-white;
+      line-height: 1.82rem;
+      margin: 0;
+      margin-bottom: 0.4rem;
+    }
+
+    &--word {
+      width: max-content;
+      font-family: "Barlow-regular";
+      font-size: 12px;
+      line-height: 1.68rem;
+      color: $color-grey-dark;
+    }
+  }
+  &::after {
+    content: "";
+    width: 0.4rem;
+    height: 3.4rem;
+    background-color: $color-pink-primary;
+    position: absolute;
+    right: 0;
+    border-radius: 3rem;
+  }
+  &:not(:hover)::after {
+    display: none;
+  }
+  &:hover {
+    background: rgba($color-pink-primary, 0.26);
+  }
+  &:hover &__icon {
+    &--smallicon {
+      stroke: $color-pink-primary;
+    }
+  }
+  &:hover &__texts {
+    &--header {
+      color: $color-pink-primary;
+    }
+  }
+}

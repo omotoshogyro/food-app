@@ -1,0 +1,258 @@
+.dashboard {
+  display: flex;
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    margin: 2.4rem;
+
+    &__headercontainer {
+      width: 64.6rem;
+      height: 8.9rem;
+      border-bottom: 1px solid $color-border-color;
+    }
+    &__titleanddate {
+      width: 13.7rem;
+      height: 6.5rem;
+      line-height: 1.96rem;
+      font-family: "Barlow-regular";
+
+      &--title {
+        font-weight: 600;
+        font-size: 2.8rem;
+        color: $color-white;
+        margin-bottom: 0.4rem;
+        height: 3.9rem;
+      }
+
+      &--date {
+        height: 2.2rem;
+        font-size: 1.6rem;
+        color: $color-grey-dark;
+      }
+    }
+
+    &__statisticsboxes {
+      margin: 2.4rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__orderreport {
+      height: 50.6rem;
+      background-color: $color-dark-background;
+      border-radius: 0.8rem;
+
+      &__header {
+        color: $color-white;
+        font-family: "Barlow-regular";
+        border-bottom: 1px solid $color-border-color;
+        height: 9.7rem;
+        margin-bottom: 1.6rem;
+
+        &-titleandfilter {
+          display: flex;
+          justify-content: space-between;
+          height: 4.5rem;
+          align-items: center;
+          margin: 2.4rem 1.6rem 1.6rem 2.4rem;
+
+          &--header {
+            font-size: 2rem;
+          }
+          &--filterbox {
+            display: flex;
+            border: 1px solid $color-border-color;
+            padding: 1.25rem 1.3rem;
+            border-radius: 0.8rem;
+            width: 12.8rem;
+            height: 4.5rem;
+
+            .filterordericon {
+              margin-right: 1rem;
+            }
+            .filterordertext {
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 130%;
+            }
+          }
+        }
+
+        &-listheaders {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          height: 2rem;
+          margin-left: 2.4rem;
+          margin-bottom: 1.6rem;
+          margin-right: 7.4rem;
+
+          li {
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+      &__table {
+        height: 36.9rem;
+        overflow-y: scroll;
+      }
+    }
+  }
+
+  &-right {
+    width: 37.2rem;
+    margin-top: 2.4rem;
+
+    &-top {
+      padding: 2.4rem;
+      height: 42.9rem;
+      background-color: $color-dark-background;
+      border-radius: 0.8rem;
+      margin-bottom: 2.4rem;
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-white;
+        // margin-bottom: 2rem;
+
+        &--text {
+          font-weight: 600;
+          font-size: 2rem;
+        }
+
+        &--dropdown {
+          select {
+            width: 9.5rem;
+            background: none;
+            padding: 1.35rem 1.4rem;
+            color: $color-white;
+            border-radius: 0.8rem;
+            outline: none;
+          }
+        }
+      }
+
+      &__horizontal-line {
+        width: 32.2rem;
+        height: 1px;
+        background-color: $color-border-color;
+        margin: 2rem 0;
+      }
+
+      &__orderedfood-btn {
+        display: flex;
+        flex-direction: column;
+
+        .orderfoods {
+          margin-bottom: 3.2rem;
+        }
+
+        &--btn {
+          border: none;
+          height: 4.8rem;
+          font-size: 1.4rem;
+          font-family: "Barlow-semi-bold";
+          color: $color-pink-primary;
+          background-color: transparent;
+          border: 1px solid $color-pink-primary;
+          border-radius: 0.8rem;
+        }
+      }
+    }
+
+    &-bottom {
+      height: 33.3rem;
+      border-radius: 0.8rem;
+      background-color: $color-dark-background;
+      padding-top: 2.4rem;
+
+      &__container {
+        height: 6.1rem;
+        border-bottom: 1px solid $color-border-color;
+      }
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $color-white;
+        margin: 0 2.4rem;
+
+        &--text {
+          font-weight: 600;
+          font-size: 2rem;
+        }
+
+        &--dropdown {
+          select {
+            width: 9.5rem;
+            background: none;
+            padding: 1.35rem 1.4rem;
+            color: $color-white;
+            border-radius: 0.8rem;
+            outline: none;
+          }
+        }
+      }
+
+      &__sectionchart {
+        display: flex;
+        padding: 3.2rem;
+        align-items: center;
+
+        &--chartcircle {
+          width: 17.6rem;
+          height: 17.6rem;
+          border: 10px solid #65b0f6;
+          // border-top: transparent;
+          border-radius: 100%;
+          margin-right: 2.4rem;
+        }
+
+        &--stats {
+          .stat {
+            display: flex;
+
+            &:nth-child(2) > .statdot{
+              background-color: #FFB572;
+            }
+            &:nth-child(3) > .statdot{
+              background-color: #65B0F6;
+            }
+
+            &:not(:last-child){
+              margin-bottom: 1.6rem;
+            }
+
+            .statdot {
+              width: 1.8rem;
+              height: 1.8rem;
+              background-color: #FF7CA3;
+              margin-right: .9rem;
+              border-radius: 100%;
+            }
+            .ordertypedetails {
+              font-family: "Barlow-regular";
+              .type {
+                color: $color-white;
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 1.82rem;
+                margin-bottom: 0.2rem;
+              }
+              .customers {
+                font-size: 1.2rem;
+                line-height: 1.68rem;
+                color: $color-grey-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

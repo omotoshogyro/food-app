@@ -1,0 +1,39 @@
+.navbar {
+  width: 10.4rem;
+  // height: 100%;
+  background-color: $color-dark-background;
+  padding: 2.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.8rem;
+
+  &__icon {
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    height: 5.6rem;
+    width: 5.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 3.8rem;
+    }
+    &:not(:first-child):hover {
+      background-color: $color-pink-primary;
+
+      .icon{
+          stroke: $color-white;
+          stroke-width: 1.5px;
+      }
+    }
+  }
+
+
+  &__iconbox--1 {
+    background-color: rgba(#eb966a, 0.26);
+  }
+
+}

@@ -1,0 +1,59 @@
+@import "./styles/variables";
+
+@import "./styles/components/navbar";
+@import "./styles/components/producthome";
+@import "./styles/components/foodbox";
+@import "./styles/components/ordercart";
+@import "./styles/components/itemincart";
+@import "./styles/components/foodtypelist";
+@import "./styles/components/foodeditbox";
+@import "./styles/components/settingoptions";
+@import "./styles/components/statisticsbox";
+@import "./styles/components/orderprofile";
+@import "./styles/components/orderedfood";
+@import "./styles/components/modal";
+
+@import "./styles/layouts/Homepage.scss";
+@import "./styles/layouts/Settings.scss";
+@import "./styles/layouts/Dashboard.scss";
+@import "./styles/layouts/ordermodal";
+
+@font-face {
+  font-family: "BarlowExtralight";
+  // font-weight: 300;
+  src: url(./assets/fonts/Barlow-ExtraLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Barlowlight";
+  font-weight: 300;
+  src: url(./assets/fonts/Barlow-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow-regular";
+  font-weight: 400;
+  src: url(./assets/fonts/Barlow-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow-semi-bold";
+  font-weight: 500;
+  src: url(./assets/fonts/Barlow-SemiBold.ttf) format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "BarlowExtralight";
+}

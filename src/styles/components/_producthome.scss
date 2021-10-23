@@ -1,0 +1,86 @@
+.productpage {
+  width: 63.2rem;
+  margin: 0 2.4rem;
+  margin-top: 2.4rem;
+
+  .productpage__headpart {
+    border-bottom: 1px solid #393c49;
+
+    .productheader {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      margin-bottom: 2.4rem;
+
+      &__detail {
+        &--name {
+          font-family: "Barlow-regular";
+          font-size: 2.8rem;
+          font-weight: 600;
+          color: $color-white;
+          margin-bottom: 0.2rem;
+          line-height: 140%;
+        }
+
+        &--date {
+          font-size: 1.6rem;
+          color: $color-grey-light;
+        }
+      }
+
+      &__input {
+        align-self: center;
+        width: 22rem;
+        height: 4.8rem;
+        background: $color-light-background;
+        border: 1px solid #393c49;
+        box-sizing: border-box;
+        border-radius: 0.8rem;
+        padding: 1.4rem;
+
+        &::placeholder {
+          color: $color-grey-dark;
+        }
+      }
+    }
+
+
+  }
+
+  .choosebtn {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.4rem 0;
+    align-items: center;
+
+    &__text {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 140%;
+      color: $color-white;
+    }
+
+    &__select {
+      width: 10rem;
+      height: 4.8rem;
+      font-size: 1.4rem;
+      justify-self: center;
+      align-self: center;
+      background-color: $color-dark-background;
+      border: 1px solid $color-border-color;
+      border-radius: 0.8rem;
+      color: $color-white;
+      padding: 1rem;
+      appearance: none;
+      // background-image: url(../../assets/icons/message-icon.svg);
+      // background-repeat: no-repeat;
+    }
+  }
+
+  .food__boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19.2rem, 1fr));
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+  }
+}

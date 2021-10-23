@@ -1,0 +1,65 @@
+.statisticsbox {
+  width: 19.9rem;
+  height: 14.3rem;
+  font-family: "Barlow-regular";
+  background-color: $color-dark-background;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: .8rem;
+
+  &__analytics {
+    width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--typeicon {
+      width: 3.8rem;
+      height: 3.8rem;
+      background-color: $color-lighter-background;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.8rem;
+    }
+
+    &--percentage {
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $color-green-dark;
+
+      &.fall{
+        color: $color-pink-secondary;
+      }
+    }
+    &--arrowicon {
+      width: 1.8rem;
+      height: 1.8rem;
+      background-color: rgba($color-green-dark, 0.24);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2rem;
+
+      &.fall{
+        background-color: rgba($color-pink-secondary, 0.24);
+      }
+    }
+  }
+
+  &__total {
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: $color-white;
+    width: 13.5rem;
+    height: 3.9rem;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: $color-grey-dark;
+  }
+}

@@ -1,0 +1,67 @@
+.foodeditbox {
+  color: $color-white;
+  border: 1px solid $color-border-color;
+  border-radius: 0.8rem;
+  width: 22.1rem;
+  height: 29.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    margin-top: 2.4rem;
+    align-self: center;
+    justify-self: center;
+  }
+
+  &__info {
+    width: 14.4rem;
+    height: 6.4rem;
+    padding: 0 1.6rem;
+    margin: 1.6rem 3.8rem;
+    margin-left: 3.9rem;
+    text-align: center;
+
+    &--desc {
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Barlow-regular";
+      line-height: 1.96rem;
+      margin-bottom: 0.8rem;
+    }
+    &--priceandavail {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Barlow-regular";
+      line-height: 1.96rem;
+      color: $color-grey-dark;
+
+      img {
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+  &__btn {
+    height: 5.2rem;
+    width: 22.1rem;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Barlow-semi-bold";
+    border: none;
+    border-radius: 0 0 0.8rem 0.8rem;
+    // align-self: center;
+    color: $color-pink-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color-pink-primary, 0.24);
+
+    &--icon {
+      margin-right: 0.8rem;
+    }
+  }
+}
