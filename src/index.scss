@@ -49,6 +49,9 @@
   padding: 0;
   box-sizing: inherit;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 
 html {
   // width: 100%;

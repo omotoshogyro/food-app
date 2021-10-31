@@ -85,14 +85,17 @@
         grid-gap: 1.6rem;
         border-bottom: 1px solid $color-border-color;
 
+        &::-webkit-scrollbar {
+          display: none;
+        }
         &--addnewbox {
           //   border: 1px dashed $color-pink-primary;
           //   width: 22.1rem;
           //   height: 29.9rem;
-        //   display: flex;
-        //   flex-direction: column;
-        //   justify-content: center;
-        //   align-items: center;
+          //   display: flex;
+          //   flex-direction: column;
+          //   justify-content: center;
+          //   align-items: center;
           position: relative;
           text-align: center;
 
@@ -105,15 +108,14 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            &--icon{
-                margin-bottom: 2.2rem;
+            &--icon {
+              margin-bottom: 2.2rem;
             }
 
-            &--text{
-                font-size: 1.6rem;
-                font-family: "Barlow-semi-bold";
-                color: $color-pink-primary;
-
+            &--text {
+              font-size: 1.6rem;
+              font-family: "Barlow-semi-bold";
+              color: $color-pink-primary;
             }
           }
         }
