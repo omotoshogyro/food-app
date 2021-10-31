@@ -47,6 +47,11 @@
       border: 1px solid $color-border-color;
     }
     &--totalprice {
+      width: 4.8rem;
+      height: 4.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: "Barlow-regular";
       font-weight: 500;
       font-size: 1.6rem;
@@ -63,13 +68,17 @@
       height: 4.8rem;
       font-family: "Barlow-regular";
       font-size: 1.4rem;
+      color: $color-grey-light;
       background-color: $color-light-background;
       border: 1px solid $color-border-color;
       border-radius: 0.8rem;
       padding-left: 1.4rem;
 
       &::placeholder {
-        color: $color-grey-light;
+        color: $color-input-placeholder;
+      }
+      &:focus {
+        outline: none;
       }
     }
     &--deleteicon {
@@ -85,7 +94,6 @@
       //   width: 2rem;
       //   height: 2rem;
       // }
-
     }
   }
 }

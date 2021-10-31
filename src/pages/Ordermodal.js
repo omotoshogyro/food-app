@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { ReactComponent as LeftArrow } from "../assets/icons/leftarrow-icon.svg";
 import { ReactComponent as AddPlus } from "../assets/icons/addplus-icon.svg";
@@ -6,9 +6,18 @@ import { ReactComponent as CreditCard } from "../assets/icons/creditcard-icon.sv
 import { ReactComponent as Paypal } from "../assets/icons/paypal-icon.svg";
 import { ReactComponent as Wallet } from "../assets/icons/wallet-icon.svg";
 
+import smallfood1 from "../assets/images/smallfood-1.png";
+import smallfood2 from "../assets/images/smallfood-2.png";
+import smallfood3 from "../assets/images/smallfood-3.png";
+import smallfood4 from "../assets/images/smallfood-4.png";
+
 import ItemInCart from "../components/ItemInCart";
 
+import { GlobalProvider } from "../globalLayer/Provider";
+
 function Orderpopup() {
+  const { setModal } = useContext(GlobalProvider);
+
   return (
     <div className="ordermodal">
       {/* Confirmation Part */}
@@ -17,7 +26,7 @@ function Orderpopup() {
         {/* icon */}
 
         <div className="confirmation__leftarrow">
-          <LeftArrow className="leftarrow-icon" />
+          <LeftArrow className="leftarrow-icon" onClick={() => setModal(false)}/>
         </div>
 
         {/* Confirmation header and details */}
@@ -33,10 +42,32 @@ function Orderpopup() {
 
         {/* Cart Lists */}
         <div className="cartlistoffoods">
-          <ItemInCart />
-          <ItemInCart />
-          <ItemInCart />
-          <ItemInCart />
+        <ItemInCart
+          image={smallfood1}
+          name="Spicy seasoned sea..."
+          price="2.29"
+          qty="2"
+          
+        />
+        <ItemInCart
+        image={smallfood2}
+        name="Salted pasta with mu..."
+        price="2.69"
+        qty="1"
+        
+         />
+        <ItemInCart 
+        image={smallfood3}
+        name="Spicy instant noodle..."
+        price="3.49"
+        qty="3"
+        />
+        <ItemInCart 
+          image={smallfood4}
+          name='Healthy noodle with ...'
+          price="3.29"
+          qty="1"
+        />
         </div>
 
         {/* Discount part */}
@@ -124,18 +155,18 @@ function Orderpopup() {
           <div className="doubleinput">
             <div className="cardinput">
               <label htmlFor="name" className="cardinput__label">
-              Order Type
+                Order Type
               </label>
               <select name="type" id="type">
-                  <option value="Dine In">Dine In</option>
-                  <option value="Dine In">To Go</option>
-                  <option value="Dine In">Delivery</option>
+                <option value="Dine In">Dine In</option>
+                <option value="Dine In">To Go</option>
+                <option value="Dine In">Delivery</option>
               </select>
             </div>
 
             <div className="cardinput">
               <label htmlFor="name" className="cardinput__label">
-              Table no.
+                Table no.
               </label>
               <input type="text" className="cardinput__input" />
             </div>
@@ -145,8 +176,10 @@ function Orderpopup() {
         {/* Cancel and confirm buttons */}
 
         <div className="payment__bottom-buttons">
-            <button className="cancel-btn">Cancel</button>
-            <button className="confirm-btn">Confirm Payment</button>
+          <button className="cancel-btn"
+          onClick={() => setModal(false)}
+          >Cancel</button>
+          <button className="confirm-btn">Confirm Payment</button>
         </div>
       </div>
     </div>

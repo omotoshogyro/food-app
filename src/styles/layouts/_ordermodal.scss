@@ -1,10 +1,11 @@
 .ordermodal {
   margin-left: auto;
-  width: 81.4rem;
   height: 83.4rem;
+  // width: 81.4rem;
+  // height: 100%;
+  //   padding-top: 0;
   background-color: $color-dark-background;
   padding: 0 2.4rem;
-  //   padding-top: 0;
   display: flex;
 }
 
@@ -275,20 +276,19 @@
       font-weight: 600;
       font-size: 1.4rem;
       line-height: 1.96rem;
-      border-radius: .8rem;
-      
+      border-radius: 0.8rem;
     }
     .cancel-btn {
-        border: 1px solid $color-pink-primary;
-        color: $color-pink-primary;
-        background-color: transparent;
+      border: 1px solid $color-pink-primary;
+      color: $color-pink-primary;
+      background-color: transparent;
     }
 
     .confirm-btn {
-        border: none;
-        color: $color-white;
-        background-color: $color-pink-primary;
-        box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+      border: none;
+      color: $color-white;
+      background-color: $color-pink-primary;
+      box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
     }
   }
 }

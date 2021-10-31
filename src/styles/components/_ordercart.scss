@@ -84,6 +84,10 @@
     border-bottom: 1px solid $color-border-color;
     height: 45.5rem;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   &__discounttotalandpaybtn {

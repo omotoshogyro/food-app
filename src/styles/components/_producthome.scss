@@ -43,8 +43,6 @@
         }
       }
     }
-
-
   }
 
   .choosebtn {
@@ -58,22 +56,6 @@
       font-size: 2rem;
       line-height: 140%;
       color: $color-white;
-    }
-
-    &__select {
-      width: 10rem;
-      height: 4.8rem;
-      font-size: 1.4rem;
-      justify-self: center;
-      align-self: center;
-      background-color: $color-dark-background;
-      border: 1px solid $color-border-color;
-      border-radius: 0.8rem;
-      color: $color-white;
-      padding: 1rem;
-      appearance: none;
-      // background-image: url(../../assets/icons/message-icon.svg);
-      // background-repeat: no-repeat;
     }
   }
 

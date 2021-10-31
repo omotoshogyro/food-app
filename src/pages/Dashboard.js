@@ -4,6 +4,7 @@ import { ReactComponent as Coin } from "../assets/icons/coin-icon.svg";
 import { ReactComponent as Order } from "../assets/icons/order-icon.svg";
 import { ReactComponent as Customer } from "../assets/icons/customer-icon.svg";
 import { ReactComponent as FilterOrder } from "../assets/icons/filterorder-icon.svg";
+import { ReactComponent as DropdownIcon } from "../assets/icons/arrowdropdown-icon.svg";
 
 import customer1 from "../assets/images/customer-1.png";
 import customer2 from "../assets/images/customer-2.png";
@@ -18,6 +19,7 @@ import orderfood3 from "../assets/images/orderfood-3.png";
 import StatisticsBox from "../components/StatisticsBox";
 import OrderProfile from "../components/OrderProfile";
 import OrderedFood from "../components/OrderedFood";
+import CustomSelect from "../components/CustomSelect";
 
 function Dashboard() {
   return (
@@ -109,17 +111,18 @@ function Dashboard() {
               status="Completed"
             />
             <OrderProfile
-              image={customer5}
-              name="Armin Arlert"
-              menu="Hot spicy fried rice with omelet"
-              price="435"
-              status="Completed"
-            />
-            <OrderProfile
               image={customer6}
               name="Hanji Zoe"
               menu="Hot spicy fried rice with omelet"
               price="245"
+              status="Completed"
+            />
+
+            <OrderProfile
+              image={customer5}
+              name="Armin Arlert"
+              menu="Hot spicy fried rice with omelet"
+              price="435"
               status="Completed"
             />
           </div>
@@ -132,11 +135,9 @@ function Dashboard() {
           <div className="dashboard-right-top__header">
             <h2 className="dashboard-right-top__header--text">Most Ordered</h2>
             <div className="dashboard-right-top__header--dropdown">
-              <select name="day" id="day">
-                <option value="Today">Today</option>
-                <option value="Today">Today</option>
-                <option value="Today">Today</option>
-              </select>
+
+              <CustomSelect opt1="Today" opt2="Next" opt3="Upper"/>
+
             </div>
           </div>
           <div className="dashboard-right-top__horizontal-line"></div>
@@ -172,19 +173,15 @@ function Dashboard() {
               <h2 className="dashboard-right-bottom__header--text">
                 Most Type of Order
               </h2>
-              <div className="dashboard-right-bottom__header--dropdown">
-                <select name="day" id="day">
-                  <option value="Today">Today</option>
-                  <option value="Today">Today</option>
-                  <option value="Today">Today</option>
-                </select>
-              </div>
+            <CustomSelect opt1="Today" opt2="Next" opt3="Upper"/>
             </div>
           </div>
 
           <div className="dashboard-right-bottom__sectionchart">
-            <div className="dashboard-right-bottom__sectionchart--chartcircle">
-              
+            <div className="dashboard-right-bottom__sectionchart--chartcircle blue">
+              <div className="dashboard-right-bottom__sectionchart--chartcircle orange">
+                <div className="dashboard-right-bottom__sectionchart--chartcircle pink"></div>
+              </div>
             </div>
 
             <div className="dashboard-right-bottom__sectionchart--stats">
@@ -211,9 +208,6 @@ function Dashboard() {
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>

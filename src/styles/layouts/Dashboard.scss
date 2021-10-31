@@ -1,4 +1,5 @@
 .dashboard {
+  background-color: $color-lighter-background;
   display: flex;
 
   &-left {
@@ -39,6 +40,7 @@
     }
 
     &__orderreport {
+      max-width: 64.6rem;
       height: 50.6rem;
       background-color: $color-dark-background;
       border-radius: 0.8rem;
@@ -81,15 +83,25 @@
 
         &-listheaders {
           list-style: none;
-          display: flex;
-          justify-content: space-between;
+          display: grid;
+          grid-template-columns: 4fr 5fr 4fr minmax(9rem, 1fr);
+          // display: flex;
+          // grid-template-columns: 4fr 5fr 4fr 1fr;
+          // justify-content: space-between;
+          // margin-right: 3.2rem;
+          // margin-left: 2.4rem;
+
           height: 2rem;
-          margin-left: 2.4rem;
+          margin: 1.6rem 2.4rem;
           margin-bottom: 1.6rem;
-          margin-right: 7.4rem;
 
           li {
+            // flex: 1;
             font-size: 1.4rem;
+
+            &:nth-child(2) {
+              margin-left: 3.2rem;
+            }
           }
         }
       }
@@ -104,6 +116,7 @@
   &-right {
     width: 37.2rem;
     margin-top: 2.4rem;
+    margin-right: 3.2rem;
 
     &-top {
       padding: 2.4rem;
@@ -124,16 +137,38 @@
           font-size: 2rem;
         }
 
-        &--dropdown {
-          select {
-            width: 9.5rem;
-            background: none;
-            padding: 1.35rem 1.4rem;
-            color: $color-white;
-            border-radius: 0.8rem;
-            outline: none;
-          }
-        }
+        // &--dropdown {
+        //   .choosebtn__dropdown {
+        //     display: flex;
+        //     width: 10rem;
+        //     height: 4.8rem;
+        //     padding: 1rem;
+
+        //     align-items: center;
+        //     justify-content: space-between;
+        //     background-color: $color-dark-background;
+        //     border: 1px solid $color-border-color;
+        //     border-radius: 0.8rem;
+
+        //     &--select {
+        //       // width: max-content;
+        //       font-size: 1.4rem;
+        //       line-height: 1.82rem;
+        //       background-color: $color-dark-background;
+        //       color: $color-white;
+        //       appearance: none;
+        //       border: none;
+
+        //       &:focus {
+        //         outline: none;
+        //       }
+        //       // justify-self: center;
+        //       // align-self: center;
+        //       // border: 1px solid $color-border-color;
+        //       // padding: 1rem;
+        //     }
+        //   }
+        // }
       }
 
       &__horizontal-line {
@@ -186,17 +221,6 @@
           font-weight: 600;
           font-size: 2rem;
         }
-
-        &--dropdown {
-          select {
-            width: 9.5rem;
-            background: none;
-            padding: 1.35rem 1.4rem;
-            color: $color-white;
-            border-radius: 0.8rem;
-            outline: none;
-          }
-        }
       }
 
       &__sectionchart {
@@ -211,28 +235,50 @@
           // border-top: transparent;
           border-radius: 100%;
           margin-right: 2.4rem;
+          position: relative;
+
+          .blue {
+            border: 10px solid #65b0f6;
+            position: absolute;
+          }
+          .orange {
+            width: 15rem;
+            height: 15rem;
+            border: 10px solid #ffb572;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          .pink {
+            width: 12.5rem;
+            height: 12.5rem;
+            border: 10px solid #ff7ca3;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
 
         &--stats {
           .stat {
             display: flex;
 
-            &:nth-child(2) > .statdot{
-              background-color: #FFB572;
+            &:nth-child(2) > .statdot {
+              background-color: #ffb572;
             }
-            &:nth-child(3) > .statdot{
-              background-color: #65B0F6;
+            &:nth-child(3) > .statdot {
+              background-color: #65b0f6;
             }
 
-            &:not(:last-child){
+            &:not(:last-child) {
               margin-bottom: 1.6rem;
             }
 
             .statdot {
               width: 1.8rem;
               height: 1.8rem;
-              background-color: #FF7CA3;
-              margin-right: .9rem;
+              background-color: #ff7ca3;
+              margin-right: 0.9rem;
               border-radius: 100%;
             }
             .ordertypedetails {

@@ -12,6 +12,7 @@
 @import "./styles/components/orderprofile";
 @import "./styles/components/orderedfood";
 @import "./styles/components/modal";
+@import "./styles/components/customselect";
 
 @import "./styles/layouts/Homepage.scss";
 @import "./styles/layouts/Settings.scss";
@@ -50,10 +51,12 @@
 }
 
 html {
+  // width: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
   font-family: "BarlowExtralight";
+  // background-color: red;
 }

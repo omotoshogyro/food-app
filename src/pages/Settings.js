@@ -29,37 +29,37 @@ function Settings() {
       <div className="settings-container">
         {/* Left Side  */}
         <div className="settings-container__left">
-          <SettingOptions 
+          <SettingOptions
             Icon={HeartIcon}
             header="Appearance"
             word="Dark and Light mode, Font size"
           />
-          <SettingOptions 
+          <SettingOptions
             Icon={RestaurantIcon}
             header="Your Restaurant"
             word="Dark and Light mode, Font size"
           />
-          <SettingOptions 
+          <SettingOptions
             Icon={ProductIcon}
             header="Products Management"
             word="Manage your product, pricing, etc"
           />
-          <SettingOptions 
+          <SettingOptions
             Icon={NotificationIcon}
             header="Notifications"
             word="Customize your notifications"
           />
-          <SettingOptions 
+          <SettingOptions
             Icon={SecurityIcon}
             header="Security"
             word="Configure Password, PIN, etc"
           />
-          <SettingOptions 
+          <SettingOptions
             Icon={SecurityIcon}
             header="Security"
             word="Configure Password, PIN, etc"
           />
-          <SettingOptions 
+          <SettingOptions
             Icon={InfoCircleIcon}
             header="About Us"
             word="Find out more about Posly"

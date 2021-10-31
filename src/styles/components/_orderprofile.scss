@@ -6,33 +6,39 @@
   color: $color-grey-light;
   margin: 0 2.4rem;
   display: grid;
-  grid-template-columns: max-content 1fr 1fr minmax(9rem, max-content);
+  // grid-template-columns: max-content 1fr 1fr minmax(9rem, max-content);
+  grid-template-columns: 4fr 5fr 4fr minmax(9rem, 1fr);
   justify-content: space-between;
   height: 6.6rem;
   padding: 1rem 0;
-  
+  // background-color: #fff;
 
-  &:not(:last-child){
-      margin-bottom: .2rem;
+  &:not(:last-child) {
+    margin-bottom: 0.2rem;
   }
 
   &__customer {
     display: flex;
-    width: 12.2rem;
+    width: max-content;
+    height: 3.2rem;
     align-self: start;
     align-items: center;
-    font-weight: 400;
     &--image {
       width: 3.2rem;
       height: 3.2rem;
       margin-right: 1.6rem;
+    }
+    &--name {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.96rem;
     }
   }
   &__menu {
     width: 13.7rem;
     height: 4rem;
     justify-self: center;
-    margin-left: 3rem;
+    // margin-left: 3rem;
   }
   &__price {
     align-self: flex-start;
