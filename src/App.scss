@@ -1,14 +1,13 @@
 .App {
   display: flex;
   background-color: #2d303e;
-  // overflow: hidden;
   max-height: 83.4rem;
-  // width: 100%;
+  // margin: auto;
 }
 
 @media screen and (min-width: 74.625em) {
   .App {
-    margin: 0 auto;
+    // margin: auto;
     // justify-content: center;
   }
 }

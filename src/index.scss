@@ -1,6 +1,6 @@
 @import "./styles/variables";
 
-@import "./styles/components/navbar";
+@import "./styles/components/mainnav";
 @import "./styles/components/producthome";
 @import "./styles/components/foodbox";
 @import "./styles/components/ordercart";
@@ -49,17 +49,15 @@
   padding: 0;
   box-sizing: inherit;
 }
-*::-webkit-scrollbar {
-  display: none;
-}
+// *::-webkit-scrollbar {
+//   display: none;
+// }
 
 html {
-  // width: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
   font-family: "BarlowExtralight";
-  // background-color: red;
 }

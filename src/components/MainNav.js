@@ -17,17 +17,21 @@ function MainNav() {
         <Storelogo className="icon" />
       </div>
 
-      <div className="navbar__icon navbar__iconbox--2">
-        <Homeicon className="icon" />
-      </div>
+      <Link to="/">
+        <div className="navbar__icon navbar__iconbox--2">
+          <Homeicon className="icon" />
+        </div>
+      </Link>
 
       <div className="navbar__icon navbar__iconbox--3">
         <Discount className="icon" />
       </div>
 
-      <div className="navbar__icon navbar__iconbox--4">
-        <Dashboard className="icon" />
-      </div>
+      <Link to="/dashboard">
+        <div className="navbar__icon navbar__iconbox--4">
+          <Dashboard className="icon" />
+        </div>
+      </Link>
 
       <div className="navbar__icon navbar__iconbox--3">
         <Message className="icon" />
@@ -36,9 +40,11 @@ function MainNav() {
         <Notification className="icon" />
       </div>
 
-      <div className="navbar__icon navbar__iconbox--4">
-        <Settings className="icon" />
-      </div>
+      <Link to="/settings">
+        <div className="navbar__icon navbar__iconbox--4">
+          <Settings className="icon" />
+        </div>
+      </Link>
 
       <div className="navbar__icon navbar__iconbox--4">
         <Logout className="icon" />
